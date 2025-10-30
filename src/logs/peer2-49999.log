@@ -1,0 +1,33 @@
+[2025-10-30 11:24:04] File server listening on port 49999
+[2025-10-30 11:24:04] Registered to server as peer 49999
+[2025-10-30 11:24:04] Sent PROVIDING list to server: ['e.dat', 'f.dat']
+[2025-10-30 11:24:04] Waiting 10000 ms...
+[2025-10-30 11:24:14] Server response for a.dat: START PROVIDERS 127.0.0.1:49983 END
+[2025-10-30 11:24:14] Downloaded part 0 of a.dat from 127.0.0.1:49983
+[2025-10-30 11:24:14] File a.dat successfully downloaded and merged.
+[2025-10-30 11:24:14] Updated server: now providing a.dat
+[2025-10-30 11:24:14] Server response for b.dat: START PROVIDERS 127.0.0.1:49983 END
+[2025-10-30 11:24:14] Downloaded part 0 of b.dat from 127.0.0.1:49983
+[2025-10-30 11:24:14] File b.dat successfully downloaded and merged.
+[2025-10-30 11:24:14] Updated server: now providing b.dat
+[2025-10-30 11:24:14] Server response for c.dat: START PROVIDERS 127.0.0.1:49983 END
+[2025-10-30 11:24:14] Downloaded part 0 of c.dat from 127.0.0.1:49983
+[2025-10-30 11:24:14] File c.dat successfully downloaded and merged.
+[2025-10-30 11:24:14] Updated server: now providing c.dat
+[2025-10-30 11:24:14] Server response for d.dat: START PROVIDERS 127.0.0.1:49983 END
+[2025-10-30 11:24:14] Downloaded part 0 of d.dat from 127.0.0.1:49983
+[2025-10-30 11:24:14] File d.dat successfully downloaded and merged.
+[2025-10-30 11:24:14] Updated server: now providing d.dat
+[2025-10-30 11:24:14] Server response for g.dat: START PROVIDERS END
+[2025-10-30 11:24:14] No providers found for g.dat
+[2025-10-30 11:24:14] Server response for h.dat: START PROVIDERS END
+[2025-10-30 11:24:14] No providers found for h.dat
+[2025-10-30 11:24:14] All downloads completed. Created inputs/peer2/repo/done
+[2025-10-30 11:24:14] Interactive mode activated.
+[2025-10-30 11:24:32] Served a.dat [0-183064228] to ('127.0.0.1', 50036)
+[2025-10-30 11:24:32] Served b.dat [0-162658284] to ('127.0.0.1', 50043)
+[2025-10-30 11:24:32] Served c.dat [0-128055618] to ('127.0.0.1', 50048)
+[2025-10-30 11:24:32] Served d.dat [0-72702344] to ('127.0.0.1', 50054)
+[2025-10-30 11:24:32] Served e.dat [0-593104281] to ('127.0.0.1', 50059)
+[2025-10-30 11:24:32] Served f.dat [0-318095570] to ('127.0.0.1', 50063)
+[2025-10-30 11:25:43] Served e.dat [1000000-2000000] to ('127.0.0.1', 50096)

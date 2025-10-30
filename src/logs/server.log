@@ -1,101 +1,94 @@
-[2025-10-30 11:06:02] Server started on port 5050
-[2025-10-30 11:06:48] Received from ('127.0.0.1', 49484): START SERVING 49483 END
-[2025-10-30 11:06:48] Peer registered: 127.0.0.1:49483
-[2025-10-30 11:06:48] Received from ('127.0.0.1', 49485): START PROVIDING 49483 4 d.dat c.dat b.dat a.dat END
-[2025-10-30 11:06:48] STATUS: 1 active peers, 0 tracked files
-[2025-10-30 11:06:48] Peer 127.0.0.1:49483 provides ['d.dat', 'c.dat', 'b.dat', 'a.dat']
-[2025-10-30 11:06:48] STATUS: 1 active peers, 4 tracked files
-[2025-10-30 11:06:52] Received from ('127.0.0.1', 49489): START SERVING 49488 END
-[2025-10-30 11:06:52] Peer registered: 127.0.0.1:49488
-[2025-10-30 11:06:52] STATUS: 2 active peers, 4 tracked files
-[2025-10-30 11:06:52] Received from ('127.0.0.1', 49490): START PROVIDING 49488 2 e.dat f.dat END
-[2025-10-30 11:06:52] Peer 127.0.0.1:49488 provides ['e.dat', 'f.dat']
-[2025-10-30 11:06:52] STATUS: 2 active peers, 6 tracked files
-[2025-10-30 11:06:56] Received from ('127.0.0.1', 49493): START SERVING 49492 END
-[2025-10-30 11:06:56] Peer registered: 127.0.0.1:49492
-[2025-10-30 11:06:56] STATUS: 3 active peers, 6 tracked files
-[2025-10-30 11:06:56] Received from ('127.0.0.1', 49494): START PROVIDING 49492 2 h.dat g.dat END
-[2025-10-30 11:06:56] Peer 127.0.0.1:49492 provides ['h.dat', 'g.dat']
-[2025-10-30 11:06:56] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49496): START SEARCH e.dat END
-[2025-10-30 11:06:58] Sent providers for e.dat: ['127.0.0.1:49488']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49499): START PROVIDING 49483 1 e.dat END
-[2025-10-30 11:06:58] Peer 127.0.0.1:49483 provides ['e.dat']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49500): START SEARCH f.dat END
-[2025-10-30 11:06:58] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:06:58] Sent providers for f.dat: ['127.0.0.1:49488']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49503): START PROVIDING 49483 1 f.dat END
-[2025-10-30 11:06:58] Peer 127.0.0.1:49483 provides ['f.dat']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49504): START SEARCH g.dat END
-[2025-10-30 11:06:58] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:06:58] Sent providers for g.dat: ['127.0.0.1:49492']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49507): START PROVIDING 49483 1 g.dat END
-[2025-10-30 11:06:58] Peer 127.0.0.1:49483 provides ['g.dat']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49508): START SEARCH h.dat END
-[2025-10-30 11:06:58] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:06:58] Sent providers for h.dat: ['127.0.0.1:49492']
-[2025-10-30 11:06:58] Received from ('127.0.0.1', 49511): START PROVIDING 49483 1 h.dat END
-[2025-10-30 11:06:58] Peer 127.0.0.1:49483 provides ['h.dat']
-[2025-10-30 11:06:58] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49515): START SEARCH a.dat END
-[2025-10-30 11:07:02] Sent providers for a.dat: ['127.0.0.1:49483']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49518): START PROVIDING 49488 1 a.dat END
-[2025-10-30 11:07:02] Peer 127.0.0.1:49488 provides ['a.dat']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49519): START SEARCH b.dat END
-[2025-10-30 11:07:02] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:02] Sent providers for b.dat: ['127.0.0.1:49483']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49522): START PROVIDING 49488 1 b.dat END
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49523): START SEARCH c.dat END
-[2025-10-30 11:07:02] Peer 127.0.0.1:49488 provides ['b.dat']
-[2025-10-30 11:07:02] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:02] Sent providers for c.dat: ['127.0.0.1:49483']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49526): START PROVIDING 49488 1 c.dat END
-[2025-10-30 11:07:02] Peer 127.0.0.1:49488 provides ['c.dat']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49527): START SEARCH d.dat END
-[2025-10-30 11:07:02] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:02] Sent providers for d.dat: ['127.0.0.1:49483']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49530): START PROVIDING 49488 1 d.dat END
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49531): START SEARCH g.dat END
-[2025-10-30 11:07:02] Peer 127.0.0.1:49488 provides ['d.dat']
-[2025-10-30 11:07:02] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:02] Sent providers for g.dat: ['127.0.0.1:49483', '127.0.0.1:49492']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49536): START PROVIDING 49488 1 g.dat END
-[2025-10-30 11:07:02] Peer 127.0.0.1:49488 provides ['g.dat']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49537): START SEARCH h.dat END
-[2025-10-30 11:07:02] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:02] Sent providers for h.dat: ['127.0.0.1:49483', '127.0.0.1:49492']
-[2025-10-30 11:07:02] Received from ('127.0.0.1', 49542): START PROVIDING 49488 1 h.dat END
-[2025-10-30 11:07:02] Peer 127.0.0.1:49488 provides ['h.dat']
-[2025-10-30 11:07:02] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49543): START SEARCH a.dat END
-[2025-10-30 11:07:06] Sent providers for a.dat: ['127.0.0.1:49488', '127.0.0.1:49483']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49548): START PROVIDING 49492 1 a.dat END
-[2025-10-30 11:07:06] Peer 127.0.0.1:49492 provides ['a.dat']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49549): START SEARCH b.dat END
-[2025-10-30 11:07:06] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:06] Sent providers for b.dat: ['127.0.0.1:49488', '127.0.0.1:49483']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49554): START PROVIDING 49492 1 b.dat END
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49555): START SEARCH c.dat END
-[2025-10-30 11:07:06] Peer 127.0.0.1:49492 provides ['b.dat']
-[2025-10-30 11:07:06] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:06] Sent providers for c.dat: ['127.0.0.1:49488', '127.0.0.1:49483']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49560): START PROVIDING 49492 1 c.dat END
-[2025-10-30 11:07:06] Peer 127.0.0.1:49492 provides ['c.dat']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49561): START SEARCH d.dat END
-[2025-10-30 11:07:06] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:06] Sent providers for d.dat: ['127.0.0.1:49488', '127.0.0.1:49483']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49566): START PROVIDING 49492 1 d.dat END
-[2025-10-30 11:07:06] Peer 127.0.0.1:49492 provides ['d.dat']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49567): START SEARCH e.dat END
-[2025-10-30 11:07:06] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:06] Sent providers for e.dat: ['127.0.0.1:49488', '127.0.0.1:49483']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49572): START PROVIDING 49492 1 e.dat END
-[2025-10-30 11:07:06] Peer 127.0.0.1:49492 provides ['e.dat']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49573): START SEARCH f.dat END
-[2025-10-30 11:07:06] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:07:06] Sent providers for f.dat: ['127.0.0.1:49488', '127.0.0.1:49483']
-[2025-10-30 11:07:06] Received from ('127.0.0.1', 49578): START PROVIDING 49492 1 f.dat END
-[2025-10-30 11:07:06] Peer 127.0.0.1:49492 provides ['f.dat']
-[2025-10-30 11:07:06] STATUS: 3 active peers, 8 tracked files
-[2025-10-30 11:08:32] Removed inactive peer: 127.0.0.1:49488
-[2025-10-30 11:08:32] 🧹 Cleaned 1 dead peers
+[2025-10-30 11:21:48] ❌ Server error: [Errno 48] Address already in use
+[2025-10-30 11:22:09] ❌ Server error: [Errno 48] Address already in use
+[2025-10-30 11:22:39] Server started on port 5050
+[2025-10-30 11:22:58] Received from ('127.0.0.1', 49984): START SERVING 49983 END
+[2025-10-30 11:22:58] Received from ('127.0.0.1', 49985): START PROVIDING 49983 4 d.dat c.dat b.dat a.dat END
+[2025-10-30 11:22:58] Peer registered: 127.0.0.1:49983
+[2025-10-30 11:22:58] Peer 127.0.0.1:49983 provides ['d.dat', 'c.dat', 'b.dat', 'a.dat']
+[2025-10-30 11:22:58] STATUS: 1 active peers, 4 tracked files
+[2025-10-30 11:22:58] STATUS: 1 active peers, 4 tracked files
+[2025-10-30 11:23:08] Received from ('127.0.0.1', 49988): START SEARCH e.dat END
+[2025-10-30 11:23:08] Sent providers for e.dat: []
+[2025-10-30 11:23:08] Received from ('127.0.0.1', 49989): START SEARCH f.dat END
+[2025-10-30 11:23:08] Sent providers for f.dat: []
+[2025-10-30 11:23:08] Received from ('127.0.0.1', 49990): START SEARCH g.dat END
+[2025-10-30 11:23:08] Sent providers for g.dat: []
+[2025-10-30 11:23:08] Received from ('127.0.0.1', 49991): START SEARCH h.dat END
+[2025-10-30 11:23:08] Sent providers for h.dat: []
+[2025-10-30 11:24:04] Received from ('127.0.0.1', 50000): START SERVING 49999 END
+[2025-10-30 11:24:04] Received from ('127.0.0.1', 50001): START PROVIDING 49999 2 e.dat f.dat END
+[2025-10-30 11:24:04] Peer registered: 127.0.0.1:49999
+[2025-10-30 11:24:04] Peer 127.0.0.1:49999 provides ['e.dat', 'f.dat']
+[2025-10-30 11:24:04] STATUS: 2 active peers, 6 tracked files
+[2025-10-30 11:24:04] STATUS: 2 active peers, 6 tracked files
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50005): START SEARCH a.dat END
+[2025-10-30 11:24:14] Sent providers for a.dat: ['127.0.0.1:49983']
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50008): START PROVIDING 49999 1 a.dat END
+[2025-10-30 11:24:14] Peer 127.0.0.1:49999 provides ['a.dat']
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50009): START SEARCH b.dat END
+[2025-10-30 11:24:14] STATUS: 2 active peers, 6 tracked files
+[2025-10-30 11:24:14] Sent providers for b.dat: ['127.0.0.1:49983']
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50012): START PROVIDING 49999 1 b.dat END
+[2025-10-30 11:24:14] Peer 127.0.0.1:49999 provides ['b.dat']
+[2025-10-30 11:24:14] STATUS: 2 active peers, 6 tracked files
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50013): START SEARCH c.dat END
+[2025-10-30 11:24:14] Sent providers for c.dat: ['127.0.0.1:49983']
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50016): START PROVIDING 49999 1 c.dat END
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50017): START SEARCH d.dat END
+[2025-10-30 11:24:14] Peer 127.0.0.1:49999 provides ['c.dat']
+[2025-10-30 11:24:14] STATUS: 2 active peers, 6 tracked files
+[2025-10-30 11:24:14] Sent providers for d.dat: ['127.0.0.1:49983']
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50020): START PROVIDING 49999 1 d.dat END
+[2025-10-30 11:24:14] Peer 127.0.0.1:49999 provides ['d.dat']
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50021): START SEARCH g.dat END
+[2025-10-30 11:24:14] STATUS: 2 active peers, 6 tracked files
+[2025-10-30 11:24:14] Sent providers for g.dat: []
+[2025-10-30 11:24:14] Received from ('127.0.0.1', 50022): START SEARCH h.dat END
+[2025-10-30 11:24:14] Sent providers for h.dat: []
+[2025-10-30 11:24:22] Received from ('127.0.0.1', 50027): START SERVING 50026 END
+[2025-10-30 11:24:22] Peer registered: 127.0.0.1:50026
+[2025-10-30 11:24:22] STATUS: 3 active peers, 6 tracked files
+[2025-10-30 11:24:22] Received from ('127.0.0.1', 50028): START PROVIDING 50026 2 h.dat g.dat END
+[2025-10-30 11:24:22] Peer 127.0.0.1:50026 provides ['h.dat', 'g.dat']
+[2025-10-30 11:24:22] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50033): START SEARCH a.dat END
+[2025-10-30 11:24:32] Sent providers for a.dat: ['127.0.0.1:49999', '127.0.0.1:49983']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50038): START PROVIDING 50026 1 a.dat END
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50039): START SEARCH b.dat END
+[2025-10-30 11:24:32] Peer 127.0.0.1:50026 provides ['a.dat']
+[2025-10-30 11:24:32] Sent providers for b.dat: ['127.0.0.1:49999', '127.0.0.1:49983']
+[2025-10-30 11:24:32] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50044): START PROVIDING 50026 1 b.dat END
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50045): START SEARCH c.dat END
+[2025-10-30 11:24:32] Peer 127.0.0.1:50026 provides ['b.dat']
+[2025-10-30 11:24:32] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:24:32] Sent providers for c.dat: ['127.0.0.1:49999', '127.0.0.1:49983']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50050): START PROVIDING 50026 1 c.dat END
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50051): START SEARCH d.dat END
+[2025-10-30 11:24:32] Peer 127.0.0.1:50026 provides ['c.dat']
+[2025-10-30 11:24:32] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:24:32] Sent providers for d.dat: ['127.0.0.1:49999', '127.0.0.1:49983']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50056): START PROVIDING 50026 1 d.dat END
+[2025-10-30 11:24:32] Peer 127.0.0.1:50026 provides ['d.dat']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50057): START SEARCH e.dat END
+[2025-10-30 11:24:32] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:24:32] Sent providers for e.dat: ['127.0.0.1:49999']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50060): START PROVIDING 50026 1 e.dat END
+[2025-10-30 11:24:32] Peer 127.0.0.1:50026 provides ['e.dat']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50061): START SEARCH f.dat END
+[2025-10-30 11:24:32] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:24:32] Sent providers for f.dat: ['127.0.0.1:49999']
+[2025-10-30 11:24:32] Received from ('127.0.0.1', 50064): START PROVIDING 50026 1 f.dat END
+[2025-10-30 11:24:32] Peer 127.0.0.1:50026 provides ['f.dat']
+[2025-10-30 11:24:32] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:25:43] Received from ('127.0.0.1', 50092): START SEARCH e.dat END
+[2025-10-30 11:25:43] Sent providers for e.dat: ['127.0.0.1:50026', '127.0.0.1:49999']
+[2025-10-30 11:25:43] Received from ('127.0.0.1', 50097): START PROVIDING 49983 1 e.dat END
+[2025-10-30 11:25:43] Peer 127.0.0.1:49983 provides ['e.dat']
+[2025-10-30 11:25:43] STATUS: 3 active peers, 8 tracked files
+[2025-10-30 11:27:10] Received from ('127.0.0.1', 50132): START SEARCH E.TXT END
+[2025-10-30 11:27:10] Sent providers for E.TXT: []
+[2025-10-30 11:27:27] Received from ('127.0.0.1', 50137): START SEARCH e.txt END
+[2025-10-30 11:27:27] Sent providers for e.txt: []
+[2025-10-30 11:27:47] Received from ('127.0.0.1', 50144): START SEARCH e.dat END
+[2025-10-30 11:27:47] Sent providers for e.dat: ['127.0.0.1:50026', '127.0.0.1:49999', '127.0.0.1:49983']

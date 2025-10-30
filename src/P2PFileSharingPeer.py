@@ -266,6 +266,115 @@ class P2PFileSharingPeer:
         except KeyboardInterrupt:
             self.shutdown()
 
+    def interactive_mode(self):
+        """Interactive CLI mode for manual peer control."""
+        print("\n🌐 Entering interactive mode. Type HELP for commands.\n")
+        self.logger.log("Interactive mode activated.")
+        provider_cache = {}  # filename -> list of (ip, port)
+
+        while True:
+            try:
+                cmd = input("> ").strip()
+                if not cmd:
+                    continue
+
+                parts = cmd.split()
+                command = parts[0].upper()
+
+                # ----------------------- HELP -----------------------
+                if command == "HELP":
+                    print("""
+    Available commands:
+    HELP                         Show this help menu
+    PORT                         Show this peer's listening port
+    SERVER                       Show connected server info
+    LIST                         List local repo files
+    REMOVE <filename>             Delete a local file
+    SEARCH <filename>             Query server for providers
+    PROVIDERS                     List cached provider info
+    DOWNLOAD <filename>           Download a file manually
+    EXIT                          Shutdown peer gracefully
+                    """)
+
+                # ----------------------- PORT -----------------------
+                elif command == "PORT":
+                    print(f"📡 Listening on port: {self.listen_port}")
+
+                # ----------------------- SERVER -----------------------
+                elif command == "SERVER":
+                    print(f"🖥️  Connected server: {self.server_ip}:{self.server_port}")
+
+                # ----------------------- LIST -----------------------
+                elif command == "LIST":
+                    files = [f.name for f in self.repo_path.iterdir() if f.is_file()]
+                    if files:
+                        print("📁 Local repository files:")
+                        for f in files:
+                            print(f"  - {f}")
+                    else:
+                        print("📂 Repository empty.")
+
+                # ----------------------- REMOVE -----------------------
+                elif command == "REMOVE" and len(parts) > 1:
+                    filename = parts[1]
+                    filepath = self.repo_path / filename
+                    if filepath.exists():
+                        os.remove(filepath)
+                        print(f"🗑️  Removed {filename}")
+                        self.logger.log(f"Removed local file: {filename}")
+                    else:
+                        print(f"⚠️ File not found: {filename}")
+
+                # ----------------------- SEARCH -----------------------
+                elif command == "SEARCH" and len(parts) > 1:
+                    filename = parts[1]
+                    providers = self.query_server_for_file(filename)
+                    provider_cache[filename] = providers
+                    if providers:
+                        print(f"🌍 Providers for {filename}:")
+                        for (ip, port) in providers:
+                            print(f"  - {ip}:{port}")
+                    else:
+                        print(f"⚠️ No providers found for {filename}")
+
+                # ----------------------- PROVIDERS -----------------------
+                elif command == "PROVIDERS":
+                    if not provider_cache:
+                        print("ℹ️ No provider information cached.")
+                    else:
+                        print("📦 Cached provider data:")
+                        for fname, peers in provider_cache.items():
+                            print(f"  {fname}: {', '.join([f'{ip}:{port}' for ip, port in peers])}")
+
+                # ----------------------- DOWNLOAD -----------------------
+                elif command == "DOWNLOAD" and len(parts) > 1:
+                    filename = parts[1]
+                    print(f"⬇️  Searching providers for {filename}...")
+                    providers = self.query_server_for_file(filename)
+                    if not providers:
+                        print(f"⚠️ No providers available for {filename}")
+                        continue
+                    self.download_file(filename, 2_000_000, providers)
+                    print(f"✅ Download complete: {filename}")
+
+                # ----------------------- EXIT -----------------------
+                elif command == "EXIT":
+                    print("👋 Shutting down peer...")
+                    self.shutdown()
+                    break
+
+                else:
+                    print("❓ Unknown command. Type HELP for a list of available commands.")
+
+            except KeyboardInterrupt:
+                print("\n🛑 Interrupted by user.")
+                self.shutdown()
+                break
+            except Exception as e:
+                self.logger.log(f"Interactive error: {e}")
+                print(f"⚠️ Error: {e}")
+
+
 
 # ---------------------------------------------------------
 # Entry Point
@@ -284,4 +393,4 @@ if __name__ == "__main__":
     peer.connect_to_server()
     peer.send_file_list()
     peer.process_schedule()
-    peer.stay_active()
+    peer.interactive_mode()
