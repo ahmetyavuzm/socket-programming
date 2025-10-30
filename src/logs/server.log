@@ -1,0 +1,91 @@
+[2025-10-30 23:07:36] Server started on port 5050
+[2025-10-30 23:07:37] Connection from ('127.0.0.1', 55453)
+[2025-10-30 23:07:37] Received from ('127.0.0.1', 55453): START SERVING 6618 END
+[2025-10-30 23:07:37] Connection from ('127.0.0.1', 55454)
+[2025-10-30 23:07:37] Peer registered: 127.0.0.1:6618
+[2025-10-30 23:07:37] Received from ('127.0.0.1', 55454): START SERVING 6619 END
+[2025-10-30 23:07:37] Connection from ('127.0.0.1', 55455)
+[2025-10-30 23:07:37] Peer registered: 127.0.0.1:6619
+[2025-10-30 23:07:37] Received from ('127.0.0.1', 55455): START PROVIDING 6618 4 d.dat c.dat b.dat a.dat END
+[2025-10-30 23:07:37] Peer 127.0.0.1:6618 provides ['d.dat', 'c.dat', 'b.dat', 'a.dat']
+[2025-10-30 23:07:37] Connection from ('127.0.0.1', 55456)
+[2025-10-30 23:07:37] Received from ('127.0.0.1', 55456): START PROVIDING 6619 4 e.dat d.dat f.dat c.dat END
+[2025-10-30 23:07:37] Connection from ('127.0.0.1', 55457)
+[2025-10-30 23:07:37] Peer 127.0.0.1:6619 provides ['e.dat', 'd.dat', 'f.dat', 'c.dat']
+[2025-10-30 23:07:37] Connection from ('127.0.0.1', 55458)
+[2025-10-30 23:07:37] Received from ('127.0.0.1', 55457): START SERVING 6620 END
+[2025-10-30 23:07:37] Received from ('127.0.0.1', 55458): START PROVIDING 6620 4 h.dat e.dat f.dat g.dat END
+[2025-10-30 23:07:37] Peer 127.0.0.1:6620 provides ['h.dat', 'e.dat', 'f.dat', 'g.dat']
+[2025-10-30 23:07:37] Peer registered: 127.0.0.1:6620
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55461)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55461): START SEARCH a.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55459)
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55460)
+[2025-10-30 23:07:38] Sent providers for a.dat: ['127.0.0.1:6618']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55459): START SEARCH e.dat END
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55460): START SEARCH a.dat END
+[2025-10-30 23:07:38] Sent providers for e.dat: ['127.0.0.1:6619', '127.0.0.1:6620']
+[2025-10-30 23:07:38] Sent providers for a.dat: ['127.0.0.1:6618']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55466)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55466): START PROVIDING 6619 1 a.dat END
+[2025-10-30 23:07:38] Peer 127.0.0.1:6619 provides ['a.dat']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55467)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55467): START PROVIDING 6620 1 a.dat END
+[2025-10-30 23:07:38] Peer 127.0.0.1:6620 provides ['a.dat']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55468)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55468): START PROVIDING 6618 1 e.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55469)
+[2025-10-30 23:07:38] Peer 127.0.0.1:6618 provides ['e.dat']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55470)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55469): START SEARCH b.dat END
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55470): START SEARCH f.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55471)
+[2025-10-30 23:07:38] Sent providers for b.dat: ['127.0.0.1:6618']
+[2025-10-30 23:07:38] Sent providers for f.dat: ['127.0.0.1:6619', '127.0.0.1:6620']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55471): START SEARCH b.dat END
+[2025-10-30 23:07:38] Sent providers for b.dat: ['127.0.0.1:6618']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55476)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55476): START PROVIDING 6619 1 b.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55477)
+[2025-10-30 23:07:38] Peer 127.0.0.1:6619 provides ['b.dat']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55477): START PROVIDING 6618 1 f.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55478)
+[2025-10-30 23:07:38] Peer 127.0.0.1:6618 provides ['f.dat']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55478): START SEARCH g.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55479)
+[2025-10-30 23:07:38] Sent providers for g.dat: ['127.0.0.1:6620']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55479): START SEARCH g.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55480)
+[2025-10-30 23:07:38] Sent providers for g.dat: ['127.0.0.1:6620']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55480): START PROVIDING 6620 1 b.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55481)
+[2025-10-30 23:07:38] Peer 127.0.0.1:6620 provides ['b.dat']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55481): START SEARCH c.dat END
+[2025-10-30 23:07:38] Sent providers for c.dat: ['127.0.0.1:6618', '127.0.0.1:6619']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55486)
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55487)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55486): START PROVIDING 6619 1 g.dat END
+[2025-10-30 23:07:38] Peer 127.0.0.1:6619 provides ['g.dat']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55487): START SEARCH h.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55488)
+[2025-10-30 23:07:38] Sent providers for h.dat: ['127.0.0.1:6620']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55488): START PROVIDING 6618 1 g.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55489)
+[2025-10-30 23:07:38] Peer 127.0.0.1:6618 provides ['g.dat']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55489): START SEARCH h.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55490)
+[2025-10-30 23:07:38] Sent providers for h.dat: ['127.0.0.1:6620']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55490): START PROVIDING 6620 1 c.dat END
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55492)
+[2025-10-30 23:07:38] Peer 127.0.0.1:6620 provides ['c.dat']
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55492): START SEARCH d.dat END
+[2025-10-30 23:07:38] Sent providers for d.dat: ['127.0.0.1:6618', '127.0.0.1:6619']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55494)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55494): START PROVIDING 6619 1 h.dat END
+[2025-10-30 23:07:38] Peer 127.0.0.1:6619 provides ['h.dat']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55497)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55497): START PROVIDING 6618 1 h.dat END
+[2025-10-30 23:07:38] Peer 127.0.0.1:6618 provides ['h.dat']
+[2025-10-30 23:07:38] Connection from ('127.0.0.1', 55498)
+[2025-10-30 23:07:38] Received from ('127.0.0.1', 55498): START PROVIDING 6620 1 d.dat END
+[2025-10-30 23:07:38] Peer 127.0.0.1:6620 provides ['d.dat']

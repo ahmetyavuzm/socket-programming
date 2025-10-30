@@ -1,0 +1,34 @@
+[2025-10-30 23:07:37] Registered to server as peer 6620
+[2025-10-30 23:07:37] File server listening on port 6620
+[2025-10-30 23:07:37] Sent PROVIDING list to server: ['h.dat', 'e.dat', 'f.dat', 'g.dat']
+[2025-10-30 23:07:37] Processing schedule plan before entering interactive mode (if enabled).
+[2025-10-30 23:07:37] Waiting 500 ms...
+[2025-10-30 23:07:38] Requesting a.dat (00104857600 bytes)
+[2025-10-30 23:07:38] Server response for a.dat: START PROVIDERS 127.0.0.1:6618 END
+[2025-10-30 23:07:38] a.dat 127.0.0.1:6618
+[2025-10-30 23:07:38] File a.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of a.dat to server.
+[2025-10-30 23:07:38] Requesting b.dat (00209715200 bytes)
+[2025-10-30 23:07:38] Server response for b.dat: START PROVIDERS 127.0.0.1:6618 END
+[2025-10-30 23:07:38] b.dat 127.0.0.1:6618
+[2025-10-30 23:07:38] File b.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of b.dat to server.
+[2025-10-30 23:07:38] Requesting c.dat (00104857600 bytes)
+[2025-10-30 23:07:38] Served g.dat bytes 0-262143 to ('127.0.0.1', 55482)
+[2025-10-30 23:07:38] Server response for c.dat: START PROVIDERS 127.0.0.1:6618 127.0.0.1:6619 END
+[2025-10-30 23:07:38] Served g.dat bytes 0-262143 to ('127.0.0.1', 55483)
+[2025-10-30 23:07:38] c.dat 127.0.0.1:6619
+[2025-10-30 23:07:38] c.dat 127.0.0.1:6618
+[2025-10-30 23:07:38] File c.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of c.dat to server.
+[2025-10-30 23:07:38] Requesting d.dat (00209715200 bytes)
+[2025-10-30 23:07:38] Served h.dat bytes 0-262143 to ('127.0.0.1', 55491)
+[2025-10-30 23:07:38] Served h.dat bytes 0-262143 to ('127.0.0.1', 55493)
+[2025-10-30 23:07:38] Server response for d.dat: START PROVIDERS 127.0.0.1:6618 127.0.0.1:6619 END
+[2025-10-30 23:07:38] d.dat 127.0.0.1:6619
+[2025-10-30 23:07:38] d.dat 127.0.0.1:6618
+[2025-10-30 23:07:38] File d.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of d.dat to server.
+[2025-10-30 23:07:38] All downloads completed. Created /Users/ayavuzm/Downloads/Socket-Programming-HW-Group-10/src/inputs/peer3/done
+[2025-10-30 23:07:38] Peer started without interactive mode; running schedule-only mode.
+[2025-10-30 23:07:38] Waiting for other peers to connect...

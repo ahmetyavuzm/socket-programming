@@ -1,0 +1,12 @@
+{
+  "templates": {
+    "template_dir": "../example-input",
+    "initial_repo": "../example-input/initial-repo-setup.txt",
+    "schedules_dir": "../example-input",
+    "schedule_pattern": "peer*-schedule.txt"
+  },
+  "default_wait_ms": 500,
+  "default_file_size_kb": 256,
+  "use_template_sizes": false,
+  "max_file_size_kb": 1024
+}

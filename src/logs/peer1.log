@@ -1,0 +1,36 @@
+[2025-10-30 23:07:37] File server listening on port 6618
+[2025-10-30 23:07:37] Registered to server as peer 6618
+[2025-10-30 23:07:37] Sent PROVIDING list to server: ['d.dat', 'c.dat', 'b.dat', 'a.dat']
+[2025-10-30 23:07:37] Processing schedule plan before entering interactive mode (if enabled).
+[2025-10-30 23:07:37] Waiting 500 ms...
+[2025-10-30 23:07:38] Requesting e.dat (00104857600 bytes)
+[2025-10-30 23:07:38] Server response for e.dat: START PROVIDERS 127.0.0.1:6619 127.0.0.1:6620 END
+[2025-10-30 23:07:38] Served a.dat bytes 0-262143 to ('127.0.0.1', 55464)
+[2025-10-30 23:07:38] Served a.dat bytes 0-262143 to ('127.0.0.1', 55462)
+[2025-10-30 23:07:38] e.dat 127.0.0.1:6620
+[2025-10-30 23:07:38] e.dat 127.0.0.1:6619
+[2025-10-30 23:07:38] File e.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of e.dat to server.
+[2025-10-30 23:07:38] Requesting f.dat (00209715200 bytes)
+[2025-10-30 23:07:38] Server response for f.dat: START PROVIDERS 127.0.0.1:6619 127.0.0.1:6620 END
+[2025-10-30 23:07:38] Served b.dat bytes 0-262143 to ('127.0.0.1', 55472)
+[2025-10-30 23:07:38] f.dat 127.0.0.1:6619
+[2025-10-30 23:07:38] f.dat 127.0.0.1:6620
+[2025-10-30 23:07:38] Served b.dat bytes 0-262143 to ('127.0.0.1', 55475)
+[2025-10-30 23:07:38] File f.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of f.dat to server.
+[2025-10-30 23:07:38] Requesting g.dat (00104857600 bytes)
+[2025-10-30 23:07:38] Server response for g.dat: START PROVIDERS 127.0.0.1:6620 END
+[2025-10-30 23:07:38] g.dat 127.0.0.1:6620
+[2025-10-30 23:07:38] Served c.dat bytes 0-262143 to ('127.0.0.1', 55484)
+[2025-10-30 23:07:38] File g.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of g.dat to server.
+[2025-10-30 23:07:38] Requesting h.dat (00209715200 bytes)
+[2025-10-30 23:07:38] Server response for h.dat: START PROVIDERS 127.0.0.1:6620 END
+[2025-10-30 23:07:38] h.dat 127.0.0.1:6620
+[2025-10-30 23:07:38] Served d.dat bytes 0-262143 to ('127.0.0.1', 55495)
+[2025-10-30 23:07:38] File h.dat successfully downloaded.
+[2025-10-30 23:07:38] Announced availability of h.dat to server.
+[2025-10-30 23:07:38] All downloads completed. Created /Users/ayavuzm/Downloads/Socket-Programming-HW-Group-10/src/inputs/peer1/done
+[2025-10-30 23:07:38] Peer started without interactive mode; running schedule-only mode.
+[2025-10-30 23:07:38] Waiting for other peers to connect...
