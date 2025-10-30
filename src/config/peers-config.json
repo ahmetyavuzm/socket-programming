@@ -1,0 +1,14 @@
+{
+  "peer1": {
+    "files": ["a.dat", "b.dat", "c.dat", "d.dat"],
+    "downloads": ["e.dat", "f.dat", "g.dat", "h.dat"]
+  },
+  "peer2": {
+    "files": ["e.dat", "f.dat"],
+    "downloads": ["a.dat", "b.dat", "c.dat", "d.dat", "g.dat", "h.dat"]
+  },
+  "peer3": {
+    "files": ["g.dat", "h.dat"],
+    "downloads": ["a.dat", "b.dat", "c.dat", "d.dat", "e.dat", "f.dat"]
+  }
+}
