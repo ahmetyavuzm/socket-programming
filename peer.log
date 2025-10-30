@@ -1,0 +1,6 @@
+[2025-10-30 08:57:35] Registered to server as peer 6088
+[2025-10-30 08:57:35] Error sending file list: [Errno 2] No such file or directory: 'peer1-repo'
+[2025-10-30 08:57:35] Peer initialization completed.
+[2025-10-30 08:58:41] Registered to server as peer 6340
+[2025-10-30 08:58:41] Sent PROVIDING list to server: ['a.dat']
+[2025-10-30 08:58:41] Peer initialization completed.

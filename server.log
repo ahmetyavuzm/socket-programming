@@ -1,0 +1,16 @@
+[2025-10-30 08:50:28] Server error: [Errno 48] Address already in use
+[2025-10-30 08:51:40] Server error: [Errno 48] Address already in use
+[2025-10-30 08:52:12] Server error: [Errno 48] Address already in use
+[2025-10-30 08:53:57] Server started on port 5050
+[2025-10-30 08:54:30] Connection from ('127.0.0.1', 64178)
+[2025-10-30 08:54:42] Received from ('127.0.0.1', 64178): START SERVING 5001 END
+[2025-10-30 08:54:42] Peer registered: 127.0.0.1:5001
+[2025-10-30 08:57:35] Connection from ('127.0.0.1', 64195)
+[2025-10-30 08:57:35] Received from ('127.0.0.1', 64195): START SERVING 6088 END
+[2025-10-30 08:57:35] Peer registered: 127.0.0.1:6088
+[2025-10-30 08:58:41] Connection from ('127.0.0.1', 64199)
+[2025-10-30 08:58:41] Received from ('127.0.0.1', 64199): START SERVING 6340 END
+[2025-10-30 08:58:41] Connection from ('127.0.0.1', 64200)
+[2025-10-30 08:58:41] Peer registered: 127.0.0.1:6340
+[2025-10-30 08:58:41] Received from ('127.0.0.1', 64200): START PROVIDING 6340 1 a.dat END
+[2025-10-30 08:58:41] Peer 127.0.0.1:6340 provides ['a.dat']
