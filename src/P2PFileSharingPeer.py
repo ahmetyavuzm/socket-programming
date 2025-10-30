@@ -354,6 +354,14 @@ Available commands:
         self.running = False
         self.logger.log("Peer shutting down gracefully.")
 
+    def stay_alive(self):
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            self.logger.log("Peer shutting down gracefully.")
+        
+
 
 # ---------------------------------------------------------
 # Entry Point
@@ -372,4 +380,5 @@ if __name__ == "__main__":
     peer.connect_to_server()
     peer.send_file_list()
     peer.process_schedule()
-    peer.interactive_mode()
+    peer.stay_alive()
+    #peer.interactive_mode()
