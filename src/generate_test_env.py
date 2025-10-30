@@ -29,7 +29,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 INPUTS_DIR = BASE_DIR / "inputs"
 CONFIG_PATH = BASE_DIR / "config" / "peers-config.json"
-WAIT_TIME_MS = 5000
+WAIT_TIME_MS = 10000
 
 
 # -------------------------------------------------------
