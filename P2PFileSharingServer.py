@@ -4,14 +4,15 @@
 import socket
 import threading
 import sys
-from utils.logger import SimpleLogger
+from logger import Logger
+
 
 
 class P2PFileSharingServer:
     def __init__(self, port: int):
         self.host = "0.0.0.0"
         self.port = port
-        self.logger = SimpleLogger("server.log")
+        self.logger = Logger("server")
         self.providers = {}  # filename -> set of (ip, port)
         self.active_peers = set()
 

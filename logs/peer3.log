@@ -1,0 +1,30 @@
+[2025-10-30 09:33:03] File server listening on port 6350
+[2025-10-30 09:33:03] Registered to server as peer 6350
+[2025-10-30 09:33:03] Sent PROVIDING list to server: ['h.dat', 'g.dat']
+[2025-10-30 09:33:03] Waiting 500 ms...
+[2025-10-30 09:33:04] Requesting a.dat (00175923307 bytes)
+[2025-10-30 09:33:04] Server response for a.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:33:04] File a.dat successfully downloaded and merged.
+[2025-10-30 09:33:04] Requesting b.dat (00538169612 bytes)
+[2025-10-30 09:33:04] Server response for b.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:33:04] File b.dat successfully downloaded and merged.
+[2025-10-30 09:33:04] Requesting c.dat (00317432043 bytes)
+[2025-10-30 09:33:04] Server response for c.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:33:04] File c.dat successfully downloaded and merged.
+[2025-10-30 09:33:04] Requesting d.dat (00523822640 bytes)
+[2025-10-30 09:33:04] Server response for d.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:33:04] File d.dat successfully downloaded and merged.
+[2025-10-30 09:33:04] Requesting e.dat (00380576997 bytes)
+[2025-10-30 09:33:04] Server response for e.dat: START PROVIDERS 127.0.0.1:6226 END
+[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6226
+[2025-10-30 09:33:04] File e.dat successfully downloaded and merged.
+[2025-10-30 09:33:04] Requesting f.dat (00318171390 bytes)
+[2025-10-30 09:33:04] Server response for f.dat: START PROVIDERS 127.0.0.1:6226 END
+[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6226
+[2025-10-30 09:33:04] File f.dat successfully downloaded and merged.
+[2025-10-30 09:33:04] All downloads completed. Created inputs/peer3/repo/done
+[2025-10-30 09:33:04] All downloads completed. Waiting for other peers to connect...

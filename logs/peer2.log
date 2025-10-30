@@ -1,0 +1,34 @@
+[2025-10-30 09:31:47] File server listening on port 6061
+[2025-10-30 09:31:47] Registered to server as peer 6061
+[2025-10-30 09:31:47] Error sending file list: [Errno 2] No such file or directory: 'example-input/peer2/repo'
+[2025-10-30 09:31:47] Schedule file not found: example-input/peer2/schedule.txt
+[2025-10-30 09:32:03] File server listening on port 6226
+[2025-10-30 09:32:03] Registered to server as peer 6226
+[2025-10-30 09:32:03] Sent PROVIDING list to server: ['e.dat', 'f.dat']
+[2025-10-30 09:32:03] Waiting 500 ms...
+[2025-10-30 09:32:03] Requesting a.dat (00275531110 bytes)
+[2025-10-30 09:32:03] Server response for a.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:32:03] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:32:03] File a.dat successfully downloaded and merged.
+[2025-10-30 09:32:03] Requesting b.dat (00130013676 bytes)
+[2025-10-30 09:32:03] Server response for b.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:32:03] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:32:03] File b.dat successfully downloaded and merged.
+[2025-10-30 09:32:03] Requesting c.dat (00266343109 bytes)
+[2025-10-30 09:32:03] Server response for c.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:32:03] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:32:03] File c.dat successfully downloaded and merged.
+[2025-10-30 09:32:03] Requesting d.dat (00283452947 bytes)
+[2025-10-30 09:32:03] Server response for d.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
+[2025-10-30 09:32:03] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
+[2025-10-30 09:32:03] File d.dat successfully downloaded and merged.
+[2025-10-30 09:32:03] Requesting g.dat (00273105214 bytes)
+[2025-10-30 09:32:03] Server response for g.dat: START PROVIDERS END
+[2025-10-30 09:32:03] No providers for g.dat
+[2025-10-30 09:32:03] Requesting h.dat (00161275923 bytes)
+[2025-10-30 09:32:03] Server response for h.dat: START PROVIDERS END
+[2025-10-30 09:32:03] No providers for h.dat
+[2025-10-30 09:32:03] All downloads completed. Created inputs/peer2/repo/done
+[2025-10-30 09:32:03] All downloads completed. Waiting for other peers to connect...
+[2025-10-30 09:33:04] Served e.dat bytes 0-1048575 to ('127.0.0.1', 64537)
+[2025-10-30 09:33:04] Served f.dat bytes 0-1048575 to ('127.0.0.1', 64539)

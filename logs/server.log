@@ -1,0 +1,69 @@
+[2025-10-30 09:31:03] Connection from ('127.0.0.1', 64492)
+[2025-10-30 09:31:03] Received from ('127.0.0.1', 64492): START SERVING 6937 END
+[2025-10-30 09:31:03] Connection from ('127.0.0.1', 64493)
+[2025-10-30 09:31:03] Peer registered: 127.0.0.1:6937
+[2025-10-30 09:31:03] Received from ('127.0.0.1', 64493): START PROVIDING 6937 4 d.dat c.dat b.dat a.dat END
+[2025-10-30 09:31:03] Peer 127.0.0.1:6937 provides ['d.dat', 'c.dat', 'b.dat', 'a.dat']
+[2025-10-30 09:31:04] Connection from ('127.0.0.1', 64494)
+[2025-10-30 09:31:04] Received from ('127.0.0.1', 64494): START SEARCH e.dat END
+[2025-10-30 09:31:04] Sent providers for e.dat: []
+[2025-10-30 09:31:04] Connection from ('127.0.0.1', 64495)
+[2025-10-30 09:31:04] Received from ('127.0.0.1', 64495): START SEARCH f.dat END
+[2025-10-30 09:31:04] Sent providers for f.dat: []
+[2025-10-30 09:31:04] Connection from ('127.0.0.1', 64496)
+[2025-10-30 09:31:04] Received from ('127.0.0.1', 64496): START SEARCH g.dat END
+[2025-10-30 09:31:04] Sent providers for g.dat: []
+[2025-10-30 09:31:04] Connection from ('127.0.0.1', 64497)
+[2025-10-30 09:31:04] Received from ('127.0.0.1', 64497): START SEARCH h.dat END
+[2025-10-30 09:31:04] Sent providers for h.dat: []
+[2025-10-30 09:31:47] Connection from ('127.0.0.1', 64501)
+[2025-10-30 09:31:47] Received from ('127.0.0.1', 64501): START SERVING 6061 END
+[2025-10-30 09:31:47] Peer registered: 127.0.0.1:6061
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64503)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64503): START SERVING 6226 END
+[2025-10-30 09:32:03] Peer registered: 127.0.0.1:6226
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64504)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64504): START PROVIDING 6226 2 e.dat f.dat END
+[2025-10-30 09:32:03] Peer 127.0.0.1:6226 provides ['e.dat', 'f.dat']
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64505)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64505): START SEARCH a.dat END
+[2025-10-30 09:32:03] Sent providers for a.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64508)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64508): START SEARCH b.dat END
+[2025-10-30 09:32:03] Sent providers for b.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64511)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64511): START SEARCH c.dat END
+[2025-10-30 09:32:03] Sent providers for c.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64514)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64514): START SEARCH d.dat END
+[2025-10-30 09:32:03] Sent providers for d.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64517)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64517): START SEARCH g.dat END
+[2025-10-30 09:32:03] Sent providers for g.dat: []
+[2025-10-30 09:32:03] Connection from ('127.0.0.1', 64518)
+[2025-10-30 09:32:03] Received from ('127.0.0.1', 64518): START SEARCH h.dat END
+[2025-10-30 09:32:03] Sent providers for h.dat: []
+[2025-10-30 09:33:03] Connection from ('127.0.0.1', 64522)
+[2025-10-30 09:33:03] Received from ('127.0.0.1', 64522): START SERVING 6350 END
+[2025-10-30 09:33:03] Connection from ('127.0.0.1', 64523)
+[2025-10-30 09:33:03] Peer registered: 127.0.0.1:6350
+[2025-10-30 09:33:03] Received from ('127.0.0.1', 64523): START PROVIDING 6350 2 h.dat g.dat END
+[2025-10-30 09:33:03] Peer 127.0.0.1:6350 provides ['h.dat', 'g.dat']
+[2025-10-30 09:33:04] Connection from ('127.0.0.1', 64524)
+[2025-10-30 09:33:04] Received from ('127.0.0.1', 64524): START SEARCH a.dat END
+[2025-10-30 09:33:04] Sent providers for a.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:33:04] Connection from ('127.0.0.1', 64527)
+[2025-10-30 09:33:04] Received from ('127.0.0.1', 64527): START SEARCH b.dat END
+[2025-10-30 09:33:04] Sent providers for b.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:33:04] Connection from ('127.0.0.1', 64530)
+[2025-10-30 09:33:04] Received from ('127.0.0.1', 64530): START SEARCH c.dat END
+[2025-10-30 09:33:04] Sent providers for c.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:33:04] Connection from ('127.0.0.1', 64533)
+[2025-10-30 09:33:04] Received from ('127.0.0.1', 64533): START SEARCH d.dat END
+[2025-10-30 09:33:04] Sent providers for d.dat: {('127.0.0.1', 6937), ('127.0.0.1', 6483)}
+[2025-10-30 09:33:04] Connection from ('127.0.0.1', 64536)
+[2025-10-30 09:33:04] Received from ('127.0.0.1', 64536): START SEARCH e.dat END
+[2025-10-30 09:33:04] Sent providers for e.dat: {('127.0.0.1', 6226)}
+[2025-10-30 09:33:04] Connection from ('127.0.0.1', 64538)
+[2025-10-30 09:33:04] Received from ('127.0.0.1', 64538): START SEARCH f.dat END
+[2025-10-30 09:33:04] Sent providers for f.dat: {('127.0.0.1', 6226)}

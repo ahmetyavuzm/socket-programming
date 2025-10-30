@@ -1,0 +1,26 @@
+[2025-10-30 09:31:03] File server listening on port 6937
+[2025-10-30 09:31:03] Registered to server as peer 6937
+[2025-10-30 09:31:03] Sent PROVIDING list to server: ['d.dat', 'c.dat', 'b.dat', 'a.dat']
+[2025-10-30 09:31:03] Waiting 500 ms...
+[2025-10-30 09:31:04] Requesting e.dat (00544028916 bytes)
+[2025-10-30 09:31:04] Server response for e.dat: START PROVIDERS END
+[2025-10-30 09:31:04] No providers for e.dat
+[2025-10-30 09:31:04] Requesting f.dat (00135138119 bytes)
+[2025-10-30 09:31:04] Server response for f.dat: START PROVIDERS END
+[2025-10-30 09:31:04] No providers for f.dat
+[2025-10-30 09:31:04] Requesting g.dat (00369012582 bytes)
+[2025-10-30 09:31:04] Server response for g.dat: START PROVIDERS END
+[2025-10-30 09:31:04] No providers for g.dat
+[2025-10-30 09:31:04] Requesting h.dat (00383379249 bytes)
+[2025-10-30 09:31:04] Server response for h.dat: START PROVIDERS END
+[2025-10-30 09:31:04] No providers for h.dat
+[2025-10-30 09:31:04] All downloads completed. Created inputs/peer1/repo/done
+[2025-10-30 09:31:04] All downloads completed. Waiting for other peers to connect...
+[2025-10-30 09:32:03] Served a.dat bytes 0-1048575 to ('127.0.0.1', 64506)
+[2025-10-30 09:32:03] Served b.dat bytes 0-1048575 to ('127.0.0.1', 64509)
+[2025-10-30 09:32:03] Served c.dat bytes 0-1048575 to ('127.0.0.1', 64512)
+[2025-10-30 09:32:03] Served d.dat bytes 0-1048575 to ('127.0.0.1', 64515)
+[2025-10-30 09:33:04] Served a.dat bytes 0-1048575 to ('127.0.0.1', 64525)
+[2025-10-30 09:33:04] Served b.dat bytes 0-1048575 to ('127.0.0.1', 64528)
+[2025-10-30 09:33:04] Served c.dat bytes 0-1048575 to ('127.0.0.1', 64531)
+[2025-10-30 09:33:04] Served d.dat bytes 0-1048575 to ('127.0.0.1', 64534)
