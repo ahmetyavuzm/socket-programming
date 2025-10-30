@@ -10,13 +10,14 @@ from logger import Logger
 
 
 class P2PFileSharingPeer:
-    def __init__(self, server_ip, server_port, repo_path, schedule_path):
+    def __init__(self, server_ip, server_port, peer_path):
         self.server_ip = server_ip
         self.server_port = int(server_port)
-        self.repo_path = repo_path
-        self.schedule_path = schedule_path
+        self.peer_path = peer_path
+        self.repo_path =  os.path.join(peer_path, "repo")
+        self.schedule_path = os.path.join(peer_path, "schedule.txt")
         self.peer_port = 6000 + os.getpid() % 1000  # unique-ish
-        self.peer_name = repo_path.split(os.sep)[-2]
+        self.peer_name = peer_path.split(os.sep)[-1]
         self.logger = Logger(f"{self.peer_name}")
 
     # ---------- SERVER COMMUNICATION ---------- #
@@ -34,7 +35,8 @@ class P2PFileSharingPeer:
 
     def send_file_list(self):
         try:
-            files = [f for f in os.listdir(self.repo_path) if os.path.isfile(os.path.join(self.repo_path, f))]
+            files = [f for f in os.listdir(self.repo_path)
+                     if os.path.isfile(os.path.join(self.repo_path, f))]
             if not files:
                 self.logger.log(f"No files found in repository: {self.repo_path}")
                 return
@@ -71,16 +73,15 @@ class P2PFileSharingPeer:
         def handle_client(conn, addr):
             try:
                 data = conn.recv(1024).decode("utf-8").strip()
-                if not data.startswith("START DOWNLOAD"):
+                if not data.startswith("START GET"):
                     return
                 parts = data.split()
-                filename, start_b, end_b = parts[2], int(parts[3]), int(parts[4])
+                filename = parts[2]
                 filepath = os.path.join(self.repo_path, filename)
                 with open(filepath, "rb") as f:
-                    f.seek(start_b)
-                    chunk = f.read(end_b - start_b + 1)
+                    chunk = f.read()
                     conn.sendall(chunk)
-                self.logger.log(f"Served {filename} bytes {start_b}-{end_b} to {addr}")
+                self.logger.log(f"Served {filename} to {addr}")
             except Exception as e:
                 self.logger.log(f"Error serving file to {addr}: {e}")
             finally:
@@ -100,43 +101,57 @@ class P2PFileSharingPeer:
 
     # ---------- FILE DOWNLOAD (CLIENT SIDE) ---------- #
     def download_file(self, filename, providers):
-        """Diğer peer’lardan paralel dosya indir."""
+        """Basit (tek parça) dosya indirimi."""
         if not providers:
             self.logger.log(f"No providers found for {filename}")
             return
 
         save_path = os.path.join(self.repo_path, filename)
-        temp_parts = []
 
-        def download_part(provider, start_b, end_b, idx):
-            ip, port = provider.split(":")
+        def download_part(ip, port, filename):
+            """Download a file from a peer with retry mechanism."""
+            retries = 3
+            retry_delay = 0.5
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.connect((ip, int(port)))
-            msg = f"START DOWNLOAD {filename} {start_b} {end_b} END"
-            s.sendall(msg.encode("utf-8"))
-            data = s.recv(1024 * 1024)
-            s.close()
-            part_path = f"{save_path}.part{idx}"
-            with open(part_path, "wb") as f:
-                f.write(data)
-            temp_parts.append(part_path)
-            self.logger.log(f"Downloaded part {idx} ({start_b}-{end_b}) from {provider}")
+            s.settimeout(5)
 
-        # (Şimdilik tüm dosya tek parça olarak indiriliyor)
+            for attempt in range(retries):
+                try:
+                    s.connect((ip, int(port)))
+                    break
+                except (ConnectionRefusedError, TimeoutError) as e:
+                    if attempt < retries - 1:
+                        self.logger.log(f"Peer {ip}:{port} not ready ({e}), retrying {attempt + 1}/{retries}...")
+                        time.sleep(retry_delay)
+                    else:
+                        self.logger.log(f"❌ Connection to {ip}:{port} failed after {retries} retries.")
+                        s.close()
+                        return
+
+            try:
+                request = f"START GET {filename} END"
+                s.sendall(request.encode())
+                with open(save_path, "wb") as f:
+                    while True:
+                        data = s.recv(1024 * 1024)
+                        if not data:
+                            break
+                        f.write(data)
+                self.logger.log(f"Downloaded {filename} from {ip}:{port}")
+            except Exception as e:
+                self.logger.log(f"❌ Error downloading {filename} from {ip}:{port}: {e}")
+            finally:
+                s.close()
+
         threads = []
-        for i, provider in enumerate(providers):
-            t = threading.Thread(target=download_part, args=(provider, 0, 1024 * 1024 - 1, i))
+        for provider in providers:
+            ip, port = provider.split(":")
+            t = threading.Thread(target=download_part, args=(ip, port, filename))
             t.start()
             threads.append(t)
         for t in threads:
             t.join()
 
-        # Parçaları birleştir
-        with open(save_path, "wb") as out:
-            for part in sorted(temp_parts):
-                with open(part, "rb") as p:
-                    out.write(p.read())
-                os.remove(part)
         self.logger.log(f"File {filename} successfully downloaded and merged.")
 
     # ---------- SCHEDULE ---------- #
@@ -162,7 +177,7 @@ class P2PFileSharingPeer:
                 else:
                     self.logger.log(f"No providers for {filename}")
 
-        done_path = os.path.join(self.repo_path, "done")
+        done_path = os.path.join(self.peer_path, "done")
         open(done_path, "w").close()
         self.logger.log(f"All downloads completed. Created {done_path}")
         self.logger.log("All downloads completed. Waiting for other peers to connect...")
@@ -172,8 +187,6 @@ class P2PFileSharingPeer:
         except KeyboardInterrupt:
             self.logger.log("Peer shutting down gracefully.")
 
-
-
     def run(self):
         self.start_file_server()
         self.connect_to_server()
@@ -182,10 +195,10 @@ class P2PFileSharingPeer:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: python P2PFileSharingPeer.py <ServerIP>:<ServerPort> <RepoPath> <ScheduleFile>")
+    if len(sys.argv) != 3:
+        print("Usage: python P2PFileSharingPeer.py <ServerIP>:<ServerPort> <PeerPath>")
         sys.exit(1)
 
     ip, port = sys.argv[1].split(":")
-    peer = P2PFileSharingPeer(ip, int(port), sys.argv[2], sys.argv[3])
+    peer = P2PFileSharingPeer(ip, int(port), sys.argv[2])
     peer.run()

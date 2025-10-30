@@ -66,7 +66,7 @@ class P2PFileSharingServer:
                 else:
                     response = "START PROVIDERS END"
                 client_socket.sendall(response.encode("utf-8"))
-                self.logger.log(f"Sent providers for {filename}: {peers}")
+                self.logger.log(f"Sent providers for {filename}: {[f'{ip}:{p}' for ip, p in peers]}")
 
         except Exception as e:
             self.logger.log(f"Error handling client {addr}: {e}")

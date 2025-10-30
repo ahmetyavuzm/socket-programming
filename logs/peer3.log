@@ -1,30 +1,35 @@
-[2025-10-30 09:33:03] File server listening on port 6350
-[2025-10-30 09:33:03] Registered to server as peer 6350
-[2025-10-30 09:33:03] Sent PROVIDING list to server: ['h.dat', 'g.dat']
-[2025-10-30 09:33:03] Waiting 500 ms...
-[2025-10-30 09:33:04] Requesting a.dat (00175923307 bytes)
-[2025-10-30 09:33:04] Server response for a.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
-[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
-[2025-10-30 09:33:04] File a.dat successfully downloaded and merged.
-[2025-10-30 09:33:04] Requesting b.dat (00538169612 bytes)
-[2025-10-30 09:33:04] Server response for b.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
-[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
-[2025-10-30 09:33:04] File b.dat successfully downloaded and merged.
-[2025-10-30 09:33:04] Requesting c.dat (00317432043 bytes)
-[2025-10-30 09:33:04] Server response for c.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
-[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
-[2025-10-30 09:33:04] File c.dat successfully downloaded and merged.
-[2025-10-30 09:33:04] Requesting d.dat (00523822640 bytes)
-[2025-10-30 09:33:04] Server response for d.dat: START PROVIDERS 127.0.0.1:6937 127.0.0.1:6483 END
-[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6937
-[2025-10-30 09:33:04] File d.dat successfully downloaded and merged.
-[2025-10-30 09:33:04] Requesting e.dat (00380576997 bytes)
-[2025-10-30 09:33:04] Server response for e.dat: START PROVIDERS 127.0.0.1:6226 END
-[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6226
-[2025-10-30 09:33:04] File e.dat successfully downloaded and merged.
-[2025-10-30 09:33:04] Requesting f.dat (00318171390 bytes)
-[2025-10-30 09:33:04] Server response for f.dat: START PROVIDERS 127.0.0.1:6226 END
-[2025-10-30 09:33:04] Downloaded part 0 (0-1048575) from 127.0.0.1:6226
-[2025-10-30 09:33:04] File f.dat successfully downloaded and merged.
-[2025-10-30 09:33:04] All downloads completed. Created inputs/peer3/repo/done
-[2025-10-30 09:33:04] All downloads completed. Waiting for other peers to connect...
+[2025-10-30 10:02:48] File server listening on port 6955
+[2025-10-30 10:02:48] Registered to server as peer 6955
+[2025-10-30 10:02:48] Sent PROVIDING list to server: ['h.dat', 'g.dat']
+[2025-10-30 10:02:48] Waiting 5000 ms...
+[2025-10-30 10:02:48] Served g.dat to ('127.0.0.1', 64918)
+[2025-10-30 10:02:48] Served h.dat to ('127.0.0.1', 64920)
+[2025-10-30 10:02:51] Served g.dat to ('127.0.0.1', 64930)
+[2025-10-30 10:02:51] Served h.dat to ('127.0.0.1', 64932)
+[2025-10-30 10:02:53] Requesting a.dat (00393312752 bytes)
+[2025-10-30 10:02:53] Server response for a.dat: START PROVIDERS 127.0.0.1:6804 END
+[2025-10-30 10:02:53] Downloaded a.dat from 127.0.0.1:6804
+[2025-10-30 10:02:53] File a.dat successfully downloaded and merged.
+[2025-10-30 10:02:53] Requesting b.dat (00228384094 bytes)
+[2025-10-30 10:02:53] Server response for b.dat: START PROVIDERS 127.0.0.1:6804 END
+[2025-10-30 10:02:53] Downloaded b.dat from 127.0.0.1:6804
+[2025-10-30 10:02:53] File b.dat successfully downloaded and merged.
+[2025-10-30 10:02:53] Requesting c.dat (00547498837 bytes)
+[2025-10-30 10:02:53] Server response for c.dat: START PROVIDERS 127.0.0.1:6804 END
+[2025-10-30 10:02:53] Downloaded c.dat from 127.0.0.1:6804
+[2025-10-30 10:02:53] File c.dat successfully downloaded and merged.
+[2025-10-30 10:02:53] Requesting d.dat (00460220153 bytes)
+[2025-10-30 10:02:53] Server response for d.dat: START PROVIDERS 127.0.0.1:6804 END
+[2025-10-30 10:02:53] Downloaded d.dat from 127.0.0.1:6804
+[2025-10-30 10:02:53] File d.dat successfully downloaded and merged.
+[2025-10-30 10:02:53] Requesting e.dat (00479474521 bytes)
+[2025-10-30 10:02:53] Server response for e.dat: START PROVIDERS 127.0.0.1:6884 END
+[2025-10-30 10:02:53] Downloaded e.dat from 127.0.0.1:6884
+[2025-10-30 10:02:53] File e.dat successfully downloaded and merged.
+[2025-10-30 10:02:53] Requesting f.dat (00518781392 bytes)
+[2025-10-30 10:02:53] Server response for f.dat: START PROVIDERS 127.0.0.1:6884 END
+[2025-10-30 10:02:53] Downloaded f.dat from 127.0.0.1:6884
+[2025-10-30 10:02:53] File f.dat successfully downloaded and merged.
+[2025-10-30 10:02:53] All downloads completed. Created inputs/peer3/done
+[2025-10-30 10:02:53] All downloads completed. Waiting for other peers to connect...
+[2025-10-30 10:04:00] Peer shutting down gracefully.

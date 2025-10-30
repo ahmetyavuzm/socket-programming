@@ -25,6 +25,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 EXAMPLE_INPUT_DIR = BASE_DIR / "inputs"
+WAIT_TIME_MS= 5000
 
 # -------------------------------------------------------
 # ✅ CONFIGURATION BASED ON example-input STRUCTURE
@@ -56,7 +57,7 @@ def create_dummy_file(filepath, size_kb=256):
 def create_schedule_file(schedule_path, downloads):
     """Generate a schedule file for a peer."""
     with open(schedule_path, "w") as f:
-        f.write("wait 500\n")
+        f.write(f"wait {WAIT_TIME_MS}\n")
         for file in downloads:
             size_str = f"{random.randint(1, 5):03d}{random.randint(10000000, 99999999)}"
             f.write(f"{file}:{size_str}\n")
